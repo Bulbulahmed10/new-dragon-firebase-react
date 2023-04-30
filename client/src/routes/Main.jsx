@@ -6,6 +6,8 @@ import Career from "../pages/carreer/Career";
 import News from "../components/news/News";
 import Categories from "../components/cateogries/Categories";
 import NewsDetails from "../components/newsDetails/NewsDetails";
+import Login from "../pages/login/Login";
+import Register from "../pages/register/Register";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +32,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path:'news/:id',
+        path: "news/:id",
         element: <NewsDetails />,
       },
       {
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: "career",
         element: <Career />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register />,
       },
     ],
   },

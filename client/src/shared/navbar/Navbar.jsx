@@ -4,7 +4,7 @@ import ActiveLink from "./ActiveLink";
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-center mt-4 max-w-[1240px] m-auto ">
-      <div className="flex justify-center gap-8 w-full">
+      <div className="flex justify-center gap-8 w-full ">
         <ActiveLink to="/">Home</ActiveLink>
         <ActiveLink to="/about">About</ActiveLink>
         <ActiveLink to="/career">Career</ActiveLink>

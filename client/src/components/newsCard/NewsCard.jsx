@@ -35,9 +35,8 @@ const NewsCard = ({ singleNewsData }) => {
           alt=""
         />
         <p className="text-[#706F6F]"> {details.slice(0, 275)}... </p>
-        {details.length > 275 && (
-          <Link
-          
+        {details.length > 275 && ( 
+          <Link to={`/news/${_id}`} 
             className="text-[#FF8A48] font-bold underline">
             Read more
           </Link>

@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between mt-4 w-full max-w-[1240px] m-auto ">
       <div className="basis-4/5">
-        <div className="flex justify-end gap-8 mr-64">
+        <div className="flex justify-end gap-8 mr-[260px]">
           <ActiveLink to="/">Home</ActiveLink>
           <ActiveLink to="/about">About</ActiveLink>
           <ActiveLink to="/career">Career</ActiveLink>

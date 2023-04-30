@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CategoryActiveLink from "../categoryActiveLink/CategoryActiveLink";
+import HighlightCategoryNews from "../highlightsCategoryNews/HighlightsCategoryNews";
 
 const LeftNav = () => {
   const [categories, setCategories] = useState([]);
@@ -22,6 +23,9 @@ const LeftNav = () => {
               {category.name}
             </CategoryActiveLink>
           ))}
+      </div>
+      <div>
+        <HighlightCategoryNews />
       </div>
     </div>
   );

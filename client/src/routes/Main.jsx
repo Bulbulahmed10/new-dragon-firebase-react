@@ -4,6 +4,7 @@ import Home from "../pages/home/Home";
 import About from "../pages/about/About";
 import Career from "../pages/carreer/Career";
 import News from "../components/news/News";
+import Categories from "../components/cateogries/Categories";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,13 @@ const router = createBrowserRouter([
           {
             path: "/",
             element: <News />,
-            loader: () => fetch(`http://localhost:4000/news`)
+            loader: () => fetch(`http://localhost:4000/news`),
+          },
+          {
+            path: "/categories/:id",
+            element: <Categories />,
+            loader: ({ params }) =>
+              fetch(`http://localhost:4000/categories/${params.id}`),
           },
         ],
       },

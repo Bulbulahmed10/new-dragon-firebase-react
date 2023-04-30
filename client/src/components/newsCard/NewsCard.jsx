@@ -2,8 +2,9 @@ import { BsBookmark, BsShare } from "react-icons/bs";
 import { AiFillStar, AiFillEye } from "react-icons/ai";
 import Ratings from "react-rating";
 import moment from "moment";
+import { Link } from "react-router-dom";
 const NewsCard = ({ singleNewsData }) => {
-  const { _id, author, title, image_url, details, rating, total_view } =
+  const {_id, author, title, image_url, details, rating, total_view, category_id } =
     singleNewsData;
   return (
     <div className="border mb-5 rounded-sm">
@@ -35,9 +36,11 @@ const NewsCard = ({ singleNewsData }) => {
         />
         <p className="text-[#706F6F]"> {details.slice(0, 275)}... </p>
         {details.length > 275 && (
-          <button className="text-[#FF8A48] font-bold underline">
+          <Link
+          
+            className="text-[#FF8A48] font-bold underline">
             Read more
-          </button>
+          </Link>
         )}
       </div>
       <div className="px-5 py-2 flex items-center justify-between border-t">

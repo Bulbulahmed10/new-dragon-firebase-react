@@ -3,6 +3,8 @@ const app = express();
 const PORT = 4000;
 const categories = require("./data/categories.json");
 const news = require("./data/news.json");
+const cors = require('cors')
+app.use(cors())
 app.get("/", (req, res) => {
   res.send("server is running");
 });

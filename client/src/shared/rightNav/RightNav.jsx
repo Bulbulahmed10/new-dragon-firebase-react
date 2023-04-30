@@ -2,7 +2,7 @@ import React from 'react'
 
 const RightNav = () => {
   return (
-    <div>RightNav</div>
+    <div className='basis-1/5 bg-yellow-600'>RightNav</div>
   )
 }
 
